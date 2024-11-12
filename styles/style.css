@@ -1,10 +1,10 @@
-body {
+/* body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
 p,a,div,span {
     color:red
-}
+} */
 
 
 .goit2 {
@@ -51,13 +51,14 @@ div #arac {
     color: blue;
 }
 
+/* 
 p {
     color: green;
-}
+} */
 
-section>p {
+/* section>p {
     color: orange !important;
-}
+} */
 
 .pelementi {
     color: red
@@ -96,15 +97,111 @@ section>p {
     /*  eksi değeri başlangıç değeri solna sağ ve alt değerini sol ve üst değerine çevirir*/
     text-shadow: -2px -2px 7px red;
     color: black !important;
-    
+
 }
 
-.shadow > .shadowspan {
-    color:blue ;
+.shadow>.shadowspan {
+    color: blue;
     font-weight: 900;
     font-size: 16px;
 }
 
 .social-links {
-    list-style-type:none
+    list-style-type: none
+}
+
+
+.box {
+    width: 400px;
+    border: 2px solid red;
+    /* padding: 30px; */
+    padding-top: 40px;
+    padding-left: 40px;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-bottom: 60px;
+    margin: 10px 10px 10px 10px;
+
+}
+
+.div1 {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid blue;
+    box-sizing: content-box;
+    background-color: lightblue;
+
+}
+
+.div2 {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid blue;
+    box-sizing: border-box;
+    background-color: lightblue;
+    border-radius: 50%;
+    overflow: auto;
+}
+
+/* .div2:hover{
+    border-color: red;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+} */
+
+
+.div1::after {
+    content: "after özelliği";
+    background-color: chartreuse;
+}
+
+.div1::before {
+    content: "before özelliği";
+    color: red;
+}
+
+body {
+    background-color: lightsalmon;
+    /* margin: 0; */
+}
+
+.frame {
+    display: none;
+    margin-top: 30px;
+    /* border: 2px solid black; */
+    width: 200px;
+    height: 100px;
+    /* display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center; */
+    border-top: 2px solid black;
+    border-left: 2px dashed red;
+    border-right: 2px dotted blue;
+    border-bottom: 2px solid purple;
+}
+
+.maxWidth {
+    max-width: 400px;
+    border: 2px solid black;
+    /* height: 200px; */
+    background-color: red;
+    max-height: 80px;
+    overflow: scroll;
+}
+
+.box123 {
+    width: 70px;
+    height: 100px;
+    background-color: red;
+}
+
+.list-item:nth-child(2n) {
+    background-color: orange;
+}
+
+.list-item:nth-child(2n+1) {
+    background-color: green;
 }
